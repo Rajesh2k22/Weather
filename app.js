@@ -19,7 +19,7 @@ function get(){
     }).then( function (data){
 
         console.log(data.main.temp);
-        p.innerHTML= `Temp on ${city} is ${data.main.temp} <sup>o</sup> F`;
+        p.innerHTML= `Temp on ${city} is ${Math.floor(data.main.temp-273.15)} <sup>o</sup> C`;
     })
 
    
